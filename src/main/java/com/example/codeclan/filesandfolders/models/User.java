@@ -18,7 +18,6 @@ public class User {
     @Column(name = "name")
     private String name;
 
-    @JsonIgnore
     @OneToMany(mappedBy = "user", fetch = FetchType.LAZY)
     private List<Folder> folders;
 
